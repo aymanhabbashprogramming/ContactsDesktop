@@ -53,6 +53,7 @@
             // 
             // txtPhoneCode
             // 
+            this.txtPhoneCode.BackColor = System.Drawing.SystemColors.Window;
             this.txtPhoneCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneCode.Location = new System.Drawing.Point(170, 181);
             this.txtPhoneCode.Multiline = true;
@@ -62,6 +63,7 @@
             // 
             // txtCountryCode
             // 
+            this.txtCountryCode.BackColor = System.Drawing.SystemColors.Window;
             this.txtCountryCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCountryCode.Location = new System.Drawing.Point(170, 133);
             this.txtCountryCode.Multiline = true;
@@ -71,6 +73,7 @@
             // 
             // txtCountryName
             // 
+            this.txtCountryName.BackColor = System.Drawing.SystemColors.Window;
             this.txtCountryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCountryName.Location = new System.Drawing.Point(170, 86);
             this.txtCountryName.Multiline = true;
@@ -156,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(432, 284);
             this.Controls.Add(this.lblCountryID);
             this.Controls.Add(this.label1);

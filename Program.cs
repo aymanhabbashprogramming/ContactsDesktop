@@ -16,7 +16,7 @@ namespace ContactsDesktopPresentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAddEditCountry(-1));
+            Application.Run(new frmMain());
         }
     }
 }
