@@ -16,19 +16,31 @@ namespace ContactsDesktopPresentation
         {
             InitializeComponent();
         }
+        private Form _ActiveForm = null;
+
+        private void OpenForm(Form form)
+        {
+            if (_ActiveForm != null)
+            {
+                if (_ActiveForm.GetType() == form.GetType())
+                    return;
+
+                _ActiveForm.Close();
+            }
+
+            _ActiveForm = form;
+            _ActiveForm.MdiParent = this;
+            _ActiveForm.Show();
+        }
 
         private void btnContactsList_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.MdiParent = this;
-            form.Show();
+            OpenForm(new Form1());
         }
 
         private void btnAddCountry_Click(object sender, EventArgs e)
         {
-            frmAddEditCountry addEditCountry = new frmAddEditCountry(-1);
-            addEditCountry.MdiParent = this;
-            addEditCountry.Show();
+            OpenForm(new frmAddEditCountry(-1));
         }
     }
 }
