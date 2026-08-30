@@ -50,6 +50,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.cbCountries = new System.Windows.Forms.ComboBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pbContactImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,6 +126,7 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(142, 94);
             this.txtFirstName.Multiline = true;
             this.txtFirstName.Name = "txtFirstName";
@@ -153,6 +155,7 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(142, 141);
             this.txtLastName.Multiline = true;
             this.txtLastName.Name = "txtLastName";
@@ -161,6 +164,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(142, 189);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -169,6 +173,7 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(142, 245);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
@@ -187,6 +192,7 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Location = new System.Drawing.Point(400, 72);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -201,6 +207,7 @@
             this.btnSetImage.TabIndex = 22;
             this.btnSetImage.Text = "Set Image";
             this.btnSetImage.UseVisualStyleBackColor = true;
+            this.btnSetImage.Click += new System.EventHandler(this.btnSetImage_Click);
             // 
             // btnRemoveImage
             // 
@@ -210,12 +217,14 @@
             this.btnRemoveImage.TabIndex = 23;
             this.btnRemoveImage.Text = "Remove";
             this.btnRemoveImage.UseVisualStyleBackColor = true;
+            this.btnRemoveImage.Click += new System.EventHandler(this.btnRemoveImage_Click);
             // 
             // pbContactImage
             // 
             this.pbContactImage.Location = new System.Drawing.Point(400, 199);
             this.pbContactImage.Name = "pbContactImage";
             this.pbContactImage.Size = new System.Drawing.Size(234, 138);
+            this.pbContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbContactImage.TabIndex = 24;
             this.pbContactImage.TabStop = false;
             // 
@@ -227,6 +236,7 @@
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -236,6 +246,7 @@
             this.btnClose.TabIndex = 26;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dtpDateOfBirth
             // 
@@ -254,6 +265,10 @@
             this.cbCountries.Name = "cbCountries";
             this.cbCountries.Size = new System.Drawing.Size(271, 28);
             this.cbCountries.TabIndex = 28;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmAddEditContact
             // 
@@ -318,5 +333,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.ComboBox cbCountries;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

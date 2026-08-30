@@ -30,5 +30,12 @@ namespace ContactsDesktopPresentation
             addEditContact.ShowDialog();
             _RefreshContactsList();
         }
+
+        private void tsmiEditContact_Click(object sender, EventArgs e)
+        {
+            frmAddEditContact addEditContact = new frmAddEditContact((int)dgvAllContacts.CurrentRow.Cells[0].Value);
+            addEditContact.ShowDialog();
+            _RefreshContactsList();
+        }
     }
 }
