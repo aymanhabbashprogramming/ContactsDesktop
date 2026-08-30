@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAllContacts = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllContacts)).BeginInit();
             this.SuspendLayout();
@@ -41,6 +42,14 @@
             this.dgvAllContacts.AllowUserToResizeRows = false;
             this.dgvAllContacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAllContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllContacts.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvAllContacts.Location = new System.Drawing.Point(12, 180);
             this.dgvAllContacts.MultiSelect = false;
             this.dgvAllContacts.Name = "dgvAllContacts";
@@ -49,15 +58,15 @@
             this.dgvAllContacts.RowHeadersVisible = false;
             this.dgvAllContacts.RowHeadersWidth = 51;
             this.dgvAllContacts.RowTemplate.Height = 24;
-            this.dgvAllContacts.Size = new System.Drawing.Size(989, 258);
+            this.dgvAllContacts.Size = new System.Drawing.Size(1133, 258);
             this.dgvAllContacts.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1013, 450);
+            this.ClientSize = new System.Drawing.Size(1157, 450);
             this.Controls.Add(this.dgvAllContacts);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
