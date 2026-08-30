@@ -78,19 +78,20 @@
             this.tsmiDeleteContac,
             this.tsmiEditContact});
             this.cmsContactOptions.Name = "cmsContactOptions";
-            this.cmsContactOptions.Size = new System.Drawing.Size(195, 60);
+            this.cmsContactOptions.Size = new System.Drawing.Size(211, 88);
             // 
             // tsmiDeleteContac
             // 
             this.tsmiDeleteContac.Name = "tsmiDeleteContac";
-            this.tsmiDeleteContac.Size = new System.Drawing.Size(194, 28);
+            this.tsmiDeleteContac.Size = new System.Drawing.Size(210, 28);
             this.tsmiDeleteContac.Text = "Delete Contact";
             // 
             // tsmiEditContact
             // 
             this.tsmiEditContact.Name = "tsmiEditContact";
-            this.tsmiEditContact.Size = new System.Drawing.Size(194, 28);
+            this.tsmiEditContact.Size = new System.Drawing.Size(210, 28);
             this.tsmiEditContact.Text = "Edit Contact";
+            this.tsmiEditContact.Click += new System.EventHandler(this.tsmiEditContact_Click);
             // 
             // lblMode
             // 
