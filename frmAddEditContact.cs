@@ -78,13 +78,13 @@ namespace ContactsDesktopPresentation
             dtpDateOfBirth.Value = _Contact.DateOfBirth;
             lblContactID.Text = _Contact.ID.ToString();
 
-            if (_Contact.ImagePath != "")
+            if (!string.IsNullOrEmpty(_Contact.ImagePath))
             {
                 pbContactImage.Load(_Contact.ImagePath);
             }
 
             btnRemoveImage.Visible = !string.IsNullOrEmpty(_Contact.ImagePath);
-            cbCountries.SelectedIndex= cbCountries.FindString(clsCountry.Find(_ContactID).CountryName);
+            cbCountries.SelectedIndex = cbCountries.FindString(clsCountry.Find(_Contact.CountryID).CountryName);
         }
 
         private void btnSetImage_Click(object sender, EventArgs e)
