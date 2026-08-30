@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAllContacts = new System.Windows.Forms.DataGridView();
             this.cmsContactOptions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiDeleteContac = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,14 +53,14 @@
             this.dgvAllContacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAllContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllContacts.ContextMenuStrip = this.cmsContactOptions;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAllContacts.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllContacts.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAllContacts.Location = new System.Drawing.Point(12, 84);
             this.dgvAllContacts.MultiSelect = false;
             this.dgvAllContacts.Name = "dgvAllContacts";
@@ -69,7 +69,7 @@
             this.dgvAllContacts.RowHeadersVisible = false;
             this.dgvAllContacts.RowHeadersWidth = 51;
             this.dgvAllContacts.RowTemplate.Height = 24;
-            this.dgvAllContacts.Size = new System.Drawing.Size(885, 281);
+            this.dgvAllContacts.Size = new System.Drawing.Size(920, 281);
             this.dgvAllContacts.TabIndex = 0;
             // 
             // cmsContactOptions
@@ -101,7 +101,7 @@
             // 
             this.lblMode.AutoSize = true;
             this.lblMode.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.Location = new System.Drawing.Point(385, 9);
+            this.lblMode.Location = new System.Drawing.Point(434, 9);
             this.lblMode.Name = "lblMode";
             this.lblMode.Size = new System.Drawing.Size(110, 23);
             this.lblMode.TabIndex = 2;
@@ -111,7 +111,7 @@
             // 
             this.btnAddNewContact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewContact.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewContact.Location = new System.Drawing.Point(706, 43);
+            this.btnAddNewContact.Location = new System.Drawing.Point(741, 43);
             this.btnAddNewContact.Name = "btnAddNewContact";
             this.btnAddNewContact.Size = new System.Drawing.Size(191, 35);
             this.btnAddNewContact.TabIndex = 23;
@@ -123,7 +123,7 @@
             // 
             this.btnResfreshList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResfreshList.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResfreshList.Location = new System.Drawing.Point(572, 43);
+            this.btnResfreshList.Location = new System.Drawing.Point(607, 43);
             this.btnResfreshList.Name = "btnResfreshList";
             this.btnResfreshList.Size = new System.Drawing.Size(128, 35);
             this.btnResfreshList.TabIndex = 25;
@@ -157,7 +157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(911, 382);
+            this.ClientSize = new System.Drawing.Size(944, 382);
             this.Controls.Add(this.txtContactID);
             this.Controls.Add(this.btnFindContact);
             this.Controls.Add(this.btnResfreshList);

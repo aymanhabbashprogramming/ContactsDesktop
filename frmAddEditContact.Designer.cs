@@ -80,9 +80,9 @@
             this.lblContactID.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactID.Location = new System.Drawing.Point(126, 49);
             this.lblContactID.Name = "lblContactID";
-            this.lblContactID.Size = new System.Drawing.Size(108, 23);
+            this.lblContactID.Size = new System.Drawing.Size(73, 23);
             this.lblContactID.TabIndex = 2;
-            this.lblContactID.Text = "lblContactID";
+            this.lblContactID.Text = "---------";
             // 
             // label5
             // 
