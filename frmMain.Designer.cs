@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnContactsList = new System.Windows.Forms.Button();
             this.btnAddCountry = new System.Windows.Forms.Button();
+            this.btnContactsList = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.AliceBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnAddCountry);
             this.panel1.Controls.Add(this.btnContactsList);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1276, 60);
+            this.panel1.Size = new System.Drawing.Size(186, 540);
             this.panel1.TabIndex = 0;
-            // 
-            // btnContactsList
-            // 
-            this.btnContactsList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactsList.Location = new System.Drawing.Point(12, 12);
-            this.btnContactsList.Name = "btnContactsList";
-            this.btnContactsList.Size = new System.Drawing.Size(218, 32);
-            this.btnContactsList.TabIndex = 0;
-            this.btnContactsList.Text = "Contacts List";
-            this.btnContactsList.UseVisualStyleBackColor = true;
-            this.btnContactsList.Click += new System.EventHandler(this.btnContactsList_Click);
             // 
             // btnAddCountry
             // 
             this.btnAddCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCountry.Location = new System.Drawing.Point(236, 12);
+            this.btnAddCountry.Location = new System.Drawing.Point(7, 49);
             this.btnAddCountry.Name = "btnAddCountry";
-            this.btnAddCountry.Size = new System.Drawing.Size(218, 32);
+            this.btnAddCountry.Size = new System.Drawing.Size(168, 32);
             this.btnAddCountry.TabIndex = 1;
             this.btnAddCountry.Text = "Add Country";
             this.btnAddCountry.UseVisualStyleBackColor = true;
             this.btnAddCountry.Click += new System.EventHandler(this.btnAddCountry_Click);
+            // 
+            // btnContactsList
+            // 
+            this.btnContactsList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContactsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContactsList.Location = new System.Drawing.Point(7, 11);
+            this.btnContactsList.Name = "btnContactsList";
+            this.btnContactsList.Size = new System.Drawing.Size(168, 32);
+            this.btnContactsList.TabIndex = 0;
+            this.btnContactsList.Text = "Contacts List";
+            this.btnContactsList.UseVisualStyleBackColor = true;
+            this.btnContactsList.Click += new System.EventHandler(this.btnContactsList_Click);
             // 
             // frmMain
             // 
