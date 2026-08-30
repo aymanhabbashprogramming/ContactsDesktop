@@ -37,5 +37,48 @@ namespace ContactsDesktopPresentation
             addEditContact.ShowDialog();
             _RefreshContactsList();
         }
+
+        private void tsmiDeleteContac_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete contact [" + dgvAllContacts.CurrentRow.Cells[0].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+            {
+                if (clsContact.DeleteContact((int)dgvAllContacts.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("Contact Deleted Successfully.");
+                    _RefreshContactsList();
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Contact is not deleted.");
+                }
+
+            }
+        }
+
+        private void btnResfreshList_Click(object sender, EventArgs e)
+        {
+            _RefreshContactsList();
+        }
+
+        private void btnFindContact_Click(object sender, EventArgs e)
+        {
+            int ContactID = Convert.ToInt32(txtContactID.Text.Trim());
+
+            clsContact contact = clsContact.Find(ContactID);
+
+            if (contact != null)
+            {
+                dgvAllContacts.DataSource = new List<clsContact> { contact };
+                txtContactID.Text = string.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Contact not found.");
+                txtContactID.Text = string.Empty;
+            }
+        }
     }
 }
