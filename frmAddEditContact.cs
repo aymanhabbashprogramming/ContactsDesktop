@@ -31,5 +31,10 @@ namespace ContactsDesktopPresentation
                 _Mode = enMode.Update;
             }
         }
+
+        private void frmAddEditContact_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
