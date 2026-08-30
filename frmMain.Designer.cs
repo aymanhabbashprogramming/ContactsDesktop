@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddCountry = new System.Windows.Forms.Button();
             this.btnContactsList = new System.Windows.Forms.Button();
+            this.btnCountriesList = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +39,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnCountriesList);
             this.panel1.Controls.Add(this.btnAddCountry);
             this.panel1.Controls.Add(this.btnContactsList);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -70,6 +72,18 @@
             this.btnContactsList.UseVisualStyleBackColor = true;
             this.btnContactsList.Click += new System.EventHandler(this.btnContactsList_Click);
             // 
+            // btnCountriesList
+            // 
+            this.btnCountriesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCountriesList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCountriesList.Location = new System.Drawing.Point(7, 87);
+            this.btnCountriesList.Name = "btnCountriesList";
+            this.btnCountriesList.Size = new System.Drawing.Size(168, 32);
+            this.btnCountriesList.TabIndex = 2;
+            this.btnCountriesList.Text = "Countries List";
+            this.btnCountriesList.UseVisualStyleBackColor = true;
+            this.btnCountriesList.Click += new System.EventHandler(this.btnCountriesList_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -80,6 +94,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -91,5 +106,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAddCountry;
         private System.Windows.Forms.Button btnContactsList;
+        private System.Windows.Forms.Button btnCountriesList;
     }
 }
