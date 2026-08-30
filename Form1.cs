@@ -65,6 +65,14 @@ namespace ContactsDesktopPresentation
 
         private void btnFindContact_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtContactID.Text))
+            {
+                MessageBox.Show("Please enter a Contact ID", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtContactID.Focus();
+                return;
+            }
             int ContactID = Convert.ToInt32(txtContactID.Text.Trim());
 
             clsContact contact = clsContact.Find(ContactID);

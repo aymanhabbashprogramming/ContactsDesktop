@@ -17,6 +17,72 @@ namespace ContactsDesktopPresentation
         private enMode _Mode;
         int _ContactID = 0;
         clsContact _Contact;
+
+        private bool _ValidateFields()
+        {
+            if (string.IsNullOrWhiteSpace(txtFirstName.Text))
+            {
+                MessageBox.Show("First Name is required.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtFirstName.Focus();
+                txtFirstName.SelectAll();
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtLastName.Text))
+            {
+                MessageBox.Show("Last Name is required.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLastName.Focus();
+                txtLastName.SelectAll();
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("Email is required.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEmail.Focus();
+                txtEmail.SelectAll();
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPhone.Text))
+            {
+                MessageBox.Show("Phone number is required.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPhone.Focus();
+                txtPhone.SelectAll();
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtAddress.Text))
+            {
+                MessageBox.Show("Address is required.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtAddress.Focus();
+                txtAddress.SelectAll();
+                return false;
+            }
+
+            if (cbCountries.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a country.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbCountries.Focus();
+                return false;
+            }
+
+            if (dtpDateOfBirth.Value > DateTime.Now)
+            {
+                MessageBox.Show("Date of Birth cannot be in the future.", "Validation Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpDateOfBirth.Focus();
+                return false;
+            }
+
+            return true;
+        }
         private void _FillCountriesInComboBox()
         {
             DataTable dataTable = clsCountry.GetAllCountries();
@@ -119,6 +185,11 @@ namespace ContactsDesktopPresentation
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (_ValidateFields() == false)
+            {
+                return; 
+            }
+
             int NewCountryID = clsCountry.Find(cbCountries.Text).ID;
 
             _Contact.FirstName = txtFirstName.Text.Trim();
