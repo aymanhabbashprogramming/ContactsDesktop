@@ -42,5 +42,10 @@ namespace ContactsDesktopPresentation
         {
             OpenForm(new frmAddEditCountry(-1));
         }
+
+        private void btnCountriesList_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmCountriesList());
+        }
     }
 }
