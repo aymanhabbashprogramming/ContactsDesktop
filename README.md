@@ -1,4 +1,3 @@
-```markdown
 # ContactsDesktopPresentation
 
 A contacts management project that allows control over people's data and their associated countries. The main page provides three core options:
@@ -25,13 +24,9 @@ This reflects one of the key highlights of this project: a practical application
 
 The solution consists of three projects linked through References:
 
-```
-ContactsDesktopPresentation (Solution)
-│
-├── ContactsDataAccessLayer     → Data access layer (from ContactHub)
-├── ContactsBusinessLayer       → Business logic layer (from ContactHub)
-└── ContactsDesktopPresentation → Presentation layer (WinForms UI, new in this project)
-```
+- **ContactsDataAccessLayer** — Data access layer (from ContactHub)
+- **ContactsBusinessLayer** — Business logic layer (from ContactHub)
+- **ContactsDesktopPresentation** — Presentation layer (WinForms UI, new in this project)
 
 Each layer depends only on the layer directly below it (PL → BLL → DAL), achieving a clear separation of concerns.
 
@@ -39,8 +34,8 @@ Each layer depends only on the layer directly below it (PL → BLL → DAL), ach
 
 The `ContactsBusinessLayer` and `ContactsDataAccessLayer` projects were added to the solution as Existing Projects, referencing their original paths within the `ContactHub` repository, then linked via Project References:
 
-1. `ContactsBusinessLayer` ← referenced `ContactsDataAccessLayer`
-2. `ContactsDesktopPresentation` ← referenced `ContactsBusinessLayer`
+1. `ContactsBusinessLayer` referenced `ContactsDataAccessLayer`
+2. `ContactsDesktopPresentation` referenced `ContactsBusinessLayer`
 
 This way, no code is duplicated; both `ContactHub` and `ContactsDesktopPresentation` share the exact same files for the BLL and DAL layers.
 
@@ -75,4 +70,3 @@ The countries grid, showing all stored countries with search and add options.
 The form used to add a new country directly.
 
 ![Add Country](./images/AddCountry.png)
-```
