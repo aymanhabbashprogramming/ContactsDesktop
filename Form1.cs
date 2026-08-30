@@ -23,5 +23,12 @@ namespace ContactsDesktopPresentation
             InitializeComponent();
             _RefreshContactsList();
         }
+
+        private void btnAddNewContact_Click(object sender, EventArgs e)
+        {
+            frmAddEditContact addEditContact = new frmAddEditContact(-1);
+            addEditContact.ShowDialog();
+            _RefreshContactsList();
+        }
     }
 }
